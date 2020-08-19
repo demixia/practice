@@ -1,0 +1,446 @@
+.header {
+    background-color: transparent;
+}
+
+.header__logo {
+    width: 160px;
+    height: 40px;
+    line-height: 45px;
+    font-size: 20px;
+    color: #fff;
+    text-indent: 50px;
+    background: url('../img/logo.png') left center no-repeat;
+    background-size: 40px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header__logo:hover {
+    color: red;
+}
+
+.header__nav {
+    margin-right: 60px;
+    margin-top: 10px;
+    float: right;
+    background-color: transparent;
+    position: relative;
+}
+
+.header__nav-item {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding-left: 40px;
+    float: left;
+    position: relative;
+    background-color: transparent;
+
+}
+
+.header__nav-item_status_active{
+	color: #fff;
+}
+
+/*.header__nav-item_status_active::after {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: rgb(242, 28, 52);;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}*/
+
+.header__nav-item_custom_button {
+    background-color: rgb(242, 28, 52);
+    border-radius: 5px;
+    text-align: center;
+    color: #fff !important;
+    width: 100px;
+    padding: 0;
+}
+
+.header__nav-item_custom_button:hover {
+    background: rgb(200, 28, 52);
+}
+
+/* 第一屏 */
+.screen-1 {
+    height: 640px;
+    width: 100%;
+    overflow: hidden;
+    background: url('../img/sc1.jpg') center no-repeat;
+    background-size: 100% 100%;
+}
+
+.screen-1__heading {
+    width: 1200px;
+	font-size:46px;
+	color: #fff;
+	text-align: center;
+    margin: 235px auto 20px auto;
+    z-index: 2;
+    background-color: transparent;
+    letter-spacing: 5px;
+}
+
+.screen-1__description {
+    width: 1200px;
+	font-size:20px;
+	color: #fff;
+	text-align: center;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: transparent;
+}
+
+/* 第二屏 */
+.screen-2 {
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+
+.screen-2__heading {
+    width: 1200px;
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    margin: 90px auto 30px auto;
+    background-color: transparent;
+}
+
+.horizontal {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(242, 28, 52);
+    border: none;
+    margin: 0 auto;
+}
+
+.screen-2__description {
+    width: 1200px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #000;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    background-color: transparent;
+}
+
+.screen-2__background {
+    width: 100%;
+    height: 361px;
+    background: url(../img/sc2.png) no-repeat center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.screen-2__man {
+    width: 275px;
+    height: 380px;
+    background: url(../img/sc2-1.png) no-repeat center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -137px;
+    z-index: 3;
+}
+
+.screen-2__rocket {
+    width: 266px;
+    height: 205px;
+    background: url(../img/sc2-2.png) no-repeat center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 2;
+}
+
+/* 第三屏 */
+.screen-3 {
+    height: 640px;
+    width: 100%;
+    background-color: rgb(43, 51, 59);
+    overflow: hidden;
+    position: relative;
+}
+
+.screen-3__left {
+    width: 570px;
+    height: 620px;
+    background: url(../img/sc3.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 130px;
+    top: 10px;
+}
+
+.screen-3__right {
+    width: 500px;
+    height: 640px;
+    text-align: left;
+    position: absolute;
+    left: 700px;
+    background-color: transparent;
+    margin-left: 310px;
+}
+
+.screen-3__heading {
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 225px;
+    margin-bottom: 30px;
+}
+
+.screen-3__horizontal {
+    margin: 0;
+}
+
+.screen-3__description {
+    color: #fff;
+    background-color: transparent;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.screen-3__courses {
+    background-color: transparent;
+    margin-top: 160px;
+    margin-left: 10px;
+    width: 485px;
+}
+
+.screen-3__course-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    background-color: transparent;
+    margin-right: 35px;
+}
+
+.item1 {
+    color: rgb(36, 139, 244);
+    border: 3px solid rgb(31, 89, 117);
+}
+
+.item2 {
+    color: rgb(70, 116, 255);
+    border: 3px solid rgb(67, 77, 118);
+}
+
+.item3 {
+    color: rgb(255, 95, 90);
+    border: 3px solid rgb(107, 65, 71);
+}
+
+.item4 {
+    color: rgb(39, 179, 222);
+    border: 3px solid rgb(41, 82, 95);
+}
+
+.item5 {
+    color: rgb(142, 189, 86);
+    border: 3px solid rgb(62, 78, 64);
+    margin: 0;
+}
+
+/* 第四屏 */
+.screen-4 {
+    height: 640px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.screen-4__wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.screen-4__heading {
+    font-size: 40px;
+    margin-top: 85px;
+    margin-bottom: 30px;
+}
+
+.screen-4__description {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-weight: lighter;
+}
+
+.screen-4__detail {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-right: 150px;
+}
+
+.screen-4__detail-description {
+    margin-top: 20px;
+}
+
+.special {
+    margin: 0;
+}
+
+/* 第五屏 */
+.screen-5 {
+    width: 100%;
+    height: 640px;
+    background: url(../img/sc5.jpg) no-repeat center;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.screen-5__wrap {
+    text-align: center;
+    width: 1200px;
+    background-color: transparent;
+    margin: 100px auto 0 auto;
+}
+
+.screen-5__image {
+    background-color: transparent;
+}
+
+.screen-5__heading {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.screen-5__horizontal {
+    background-color: #fff;
+}
+
+.screen-5__description {
+    color: #fff;
+    background-color: transparent;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/* extra */
+.extra {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.extra__button {
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #000;
+    display: inline-block;
+    width: 240px;
+    height: 58px;
+    line-height: 60px;
+    margin-top: 70px;
+}
+
+.extra__button:hover {
+    color: rgb(255, 95, 90);
+}
+
+/* footer */
+.footer {
+    height: 105px;
+    width: 100%;
+    background-color: #000;
+    text-align:center;
+    position: relative;
+}
+
+.footer__nav {
+    background-color: transparent;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.footer__nav-item {
+    color: #fff;
+    padding: 0 15px;
+    background-color: transparent;
+}
+
+.footer__nav-item:hover {
+    color: rgb(242, 28, 52);
+}
+
+.footer_copyright {
+    background-color: transparent;
+    color: rgb(112, 112, 112);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+/* outline */
+.outline {
+    position: fixed;
+    padding: 5px 10px;
+    bottom: 120px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1);
+    z-index: 5;
+}
+
+.outline__item {
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0;
+    background: rgb(255,255,255);
+    margin: 5px 0px 0px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    color: #93999f;
+}
+
+.outline__item:first-child{
+    border:none;
+}
+
+.outline__item:hover,
+.outline__item_status_active{
+    color: #f00;
+}
+
+.header__nav-tip{
+	position: absolute;
+	width: 60px;
+	margin-left: 60px;
+	height: 2px;
+	background: #f00;
+	left: 0;
+	bottom: 0px;
+    transition:  all .5s;
+
+}

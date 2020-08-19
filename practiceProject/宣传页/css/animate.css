@@ -1,0 +1,263 @@
+.screen-1__heading,
+.screen-1__description {
+    transition: all 1s;
+}
+
+.screen-1__description {
+    transition-delay: 0.5s;
+}
+
+.screen-1__heading_animate_done,
+.screen-1__description_animate_done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.screen-1__heading_animate_init,
+.screen-1__description_animate_init {
+    opacity: 0;
+    transform: translate(0, 100%);
+}
+
+
+/* 导航条样式变动 */
+.header{
+    transition: all 1s;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top:0;
+}
+
+.header__animate_init {
+    opacity: 0;
+    transform: translate(0,-100%);
+}
+
+.header__animate_done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.header_status_white{
+	background: rgba(255,255,255,.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+}
+.header_status_white .header__nav-item,
+.header_status_white .header__logo{
+	color: #000;
+}
+
+/* outline animation */
+.outline{
+	transform: translate(100%,0);
+	transition: all 1s;
+}
+
+.outline_status_in{
+	transform: translate(0,0);
+}
+
+.outline__item{
+	transition: all 1s;
+}
+
+/* 第二屏 */
+.screen-2__heading,
+.screen-2__horizontal,
+.screen-2__description,
+.screen-2__man {
+	transition: all 1s;
+}
+
+.screen-2__heading_animate_init,
+.screen-2__horizontal_animate_init,
+.screen-2__description_animate_init,
+.screen-2__man_animate_init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+
+.screen-2__heading_animate_done,
+.screen-2__horizontal_animate_done,
+.screen-2__description_animate_done,
+.screen-2__man_animate_done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.screen-2__rocket,
+.screen-2__rocket_animate_init {
+    opacity: 0;
+    transform: translate(0, 3000px, 0);
+}
+
+.screen-2__rocket_animate_done {
+    animation: bounceInUp 0.5s 1s forwards;
+}
+
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(0, -20px, 0);
+    }
+    75% {
+        opacity: 1;
+        transform: translate3d(0, 10px, 0);
+    }
+    90% {
+        opacity: 1;
+        transform: translate3d(0, -5px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*第三屏动画*/
+.screen-3__left,
+.screen-3__heading,
+.screen-3__horizontal,
+.screen-3__description,
+.screen-3__courses {
+	transition: all 1s;
+}
+
+.screen-3__heading_animate_done,
+.screen-3__horizontal_animate_done,
+.screen-3__description_animate_done {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*定义帧动画*/
+@keyframes bounce {
+	0% {
+        margin-top: 160px;
+    }
+    50% {
+        margin-top: 170px;
+    }
+    100% {
+        margin-top: 160px;
+    }
+
+}  
+
+.screen-3__courses_animate_done {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.screen-3__courses_bounce_animation {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+}
+
+.screen-3__left_animate_done {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.screen-3__left_animate_init{
+	opacity: 0;
+	transform: scale(.1);
+}
+
+.screen-3__heading_animate_init,
+.screen-3__horizontal_animate_init,
+.screen-3__description_animate_init,
+.screen-3__courses_animate_init {
+	opacity: 0;
+	transform: translate(0,100%);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.screen-3__courses_bounce_animation {
+    animation: pulse 1s 3s linear infinite alternate;
+}
+
+
+/*第四屏动画*/
+.screen-4__heading,
+.screen-4__horizontal,
+.screen-4__description,
+.screen-4__detail {
+	transition: all 1s;
+}
+
+.screen-4__heading_animate_init,
+.screen-4__horizontal_animate_init,
+.screen-4__description_animate_init {
+	opacity: 0;
+	transform: translate(0, 100%);
+}
+
+.screen-4__detail_animate_init {
+	opacity: 0;
+	transform: scale(0.1);
+}
+
+.screen-4__heading_animate_done,
+.screen-4__horizontal_animate_done,
+.screen-4__description_animate_done {
+    opacity: 1;
+	transform: translate(0, 0);
+}
+
+.screen-4__detail_animate_done {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/*第5屏动画*/
+.screen-5__image,
+.screen-5__heading,
+.screen-5__description,
+.screen-5__horizontal {
+	transition: all 1s;
+}
+
+.screen-5__heading_animate_init,
+.screen-5__description_animate_init,
+.screen-5__horizontal_animate_init {
+	opacity: 0;
+	transform: translate(0, 100%);
+}
+
+.screen-5__image_animate_init {
+    opacity: 0;
+    transform: scale(0.1);
+}
+
+.screen-5__heading_animate_done,
+.screen-5__description_animate_done,
+.screen-5__horizontal_animate_done {
+    opacity: 1;
+	transform: translate(0, 0);
+}
+
+.screen-5__image_animate_done {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+

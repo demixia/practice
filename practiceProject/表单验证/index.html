@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高铁客户服务中心</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="header__navbar">
+            <div class="header__logo">
+                <img class="header__logo-img" src="img/logo.png" alt="logo">
+                <div class="header__logo-description">
+                    <span class="logo-desc-1">慕课高铁客户服务中心&nbsp;|&nbsp;</span>
+                    <span class="logo-desc-2">客户服务</span>  
+                </div>
+            </div>
+            <nav class="header__nav">
+                <li class="header__nav-item"><a href="#">意见反馈&nbsp;<span class="special">imooc@com</span>&nbsp;</a></li>
+                <li class="header__nav-item">您好，请<a href="#" class="special">&nbsp;登录&nbsp;</a>|<a href="#">&nbsp;注册&nbsp;</a></li>
+                <li class="header__nav-item header__nav-item-mine">
+                    <a href="#" class="specail-mine">我的IMOOC</a>
+                    <div class="mine-arrow"></div>
+                    <ul class="header__nav-list">
+                        <li class="header__nav-list-item"><a href="">未完成订单</a></li>
+                        <li class="header__nav-list-item"><a href="">已完成订单（退/改）</a></li>
+                        <li class="header__nav-list-item header__item-special"><a href="">我的保险</a></li>
+                        <li class="header__nav-list-item"><a href="">查看个人信息</a></li>
+                        <li class="header__nav-list-item"><a href="">账户安全</a></li>
+                        <li class="header__nav-list-item header__item-special"><a href="">常用联系人</a></li>
+                        <li class="header__nav-list-item"><a href="">重点旅客预约</a></li>
+                        <li class="header__nav-list-item"><a href="">遗失物品查找</a></li>
+                        <li class="header__nav-list-item header__item-special"><a href="">服务查询</a></li>
+                        <li class="header__nav-list-item"><a href="">投诉</a></li>
+                        <li class="header__nav-list-item"><a href="">建议</a></li>
+                    </ul>
+                </li>
+                <li class="header__nav-item"><a href="#"><img class="nav-phone" src="img/未标题-1.png">手机版</a></li>
+            </nav>
+        </div>
+    </header>
+    <!-- 表单 -->
+    <main class="main">
+        <div class="box">
+            <p class="main__description">您现在的位置：<span class="main__special-color">客运首页&nbsp;&gt;&nbsp;注册</span></p>
+            <div class="main__form">
+                <p class="main__form-title">账户信息</p>
+                <form class="main__form-list">
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <lable for="userName" class="form-label">用&nbsp;&nbsp;户&nbsp;名：</lable>
+                        <input type="text" id="userName" placeholder="用户名设置成功后不可修改" required>
+                        <span class="form__important-description">6-30位字母、数字或“_”，字母开头</span>
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <lable for="password" class="form-label">登陆密码：</lable>
+                        <input type="password" id="password" placeholder="6-20位字母、数字或字符" required>
+                        <span class="passwordCheck weak"></span>
+                        <span class="passwordCheck"></span>
+                        <span class="passwordCheck"></span>
+                        <p class="password-warning"></p>
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <lable for="passwordAgain" class="form-label">确认密码：</lable>
+                        <input type="password" id="passwordAgain" placeholder="再次输入您的登陆密码" required>
+                        <span class="form__important-description"></span>
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <lable for="trueName" class="form-label">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</lable>
+                        <input type="text" id="trueName" placeholder="请输入姓名" required>
+                        <div class="name-special">   
+                            <span class="form__important-description"><a>姓名填写规则</a></span>
+                            <ul class="tips" id="tips">
+                                <li>1. 确认姓名中生僻字无法输入时，可用生僻字拼音或同音字替代。</li>
+                                <li>2. 输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉字的拼音或同音字重新修改后保存。</li>
+                                <li>3. 姓名中有繁体字无法输入时，可用简体字替代。</li>
+                                <li>4. 姓名较长，汉字与英文字符合计超过30个的（一个汉字算两个字符），需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入），其中英文字符输入时不区别大小写。</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <label for="idType" class="form-label">证件类型：</label>
+                        <select name="idType">
+                            <option value="二代身份证">二代身份证</option>
+                            <option value="港澳通行证">港澳通行证</option>
+                            <option value="台湾通行证">台湾通行证</option>
+                            <option value="护照">护照</option>
+                        </select>
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <lable for="idNum" class="form-label">证件号码：</lable>
+                        <input type="text" id="idNum" placeholder="请输入您的证件号码">
+                        <span class="form__important-description"></span>
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">&nbsp;</span>
+                        <lable for="email" class="form-label">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</lable>
+                        <input type="email" id="email" placeholder="请正确填写邮箱地址">
+                        <span class="form__important-description"></span>
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <lable for="tel" class="form-label">手机号码：</lable>
+                        <input type="tel" id="tel" placeholder="请输入您的手机号码">
+                        <span class="form__important-description">请正确填写手机号码，稍后将向该手机号码发送短信验证码</span>
+                    </div>
+                    <div class="main__form-item">
+                        <span class="form__important">*</span>
+                        <label for="passengerType" class="form-label">旅客类型：</label>
+                        <select name="passengerType">
+                            <option value="成人">成人</option>
+                            <option value="儿童">儿童</option>
+                            <option value="学生">学生</option>
+                            <option value="残疾军人">残疾军人</option>
+                            <option value="伤残人民警察">伤残人民警察</option>
+                        </select>
+                    </div>
+                    <div id="end">
+                        <input type="checkbox" id="choose">
+                        <label for="choose">我已阅读并同意遵守<a href="" class="terms">《中国铁路客户服务中心网站服务条款》</a></label>
+                    </div>
+                    <div class="nextStep">
+                        <button type="button" id="nextStep">下一步</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>关于我们｜网站申明</p>
+        <p>Copyright &copy; 2017 imooc.com All Rights Reserved｜京ICP备 13046642号-2</p>
+    </footer>
+</body>
+</html>

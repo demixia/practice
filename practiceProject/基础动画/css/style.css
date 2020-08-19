@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.sky {
+    width: 100%;
+    height: 60vh;
+    background: -webkit-linear-gradient(rgb(196, 228, 253), #fff);
+    background:    -moz-linear-gradient(rgb(196, 228, 253), #fff);
+    background:      -o-linear-gradient(rgb(196, 228, 253), #fff);
+    background:         linear-gradient(rgb(196, 228, 253), #fff);
+}
+
+.cloud {
+    width: 220px;
+    height:80px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+}
+
+.cloud::before {
+    content: "";
+    display: block;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -35px;
+    left: 80px;
+}
+
+.cloud::after {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -15px;
+    left: 25px;
+}
+
+.cloud1 {
+    top:10%;
+    opacity: 0.8;
+    animation: cloudAni1 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cloud2 {
+    top: 5%;
+    transform: scale(0.7);
+    opacity: 0.9;
+    animation: cloudAni1 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cloud3 {
+    top:25%;
+    transform: scale(0.5);
+    opacity: 0.7;
+    animation: cloudAni1 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cloud4 {
+    top:20%;
+    transform: scale(0.7);
+    opacity: 0.8;
+    animation: cloudAni1 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cloud5 {
+    top:20%;
+    transform: scale(1.3);
+    animation: cloudAni1 27s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloudAni1{
+    from {
+        right: -10%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* ground style */
+.ground {
+    width: 100%;
+    height: 40vh;
+    background: -webkit-linear-gradient(#fff, rgb(148, 190, 89));
+    background:    -moz-linear-gradient(#fff, rgb(148, 190, 89));
+    background:      -o-linear-gradient(#fff, rgb(148, 190, 89));
+    background:         linear-gradient(#fff, rgb(148, 190, 89));
+}
+
+.ground img {
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+}
